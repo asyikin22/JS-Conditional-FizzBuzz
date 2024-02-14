@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housechores Allowance</title>
+</head>
+<body>
+    <label for="chores-check">Has the house chores been done today?</label>
+    <input type="checkbox" id="chores-check">
+
+    <p></p>
+
+    <script>
+        const checkBox = document.querySelector('input');
+        const para = document.querySelector('p');
+        let choresDone = false;
+
+        checkBox.addEventListener('change', () => {
+            checkBox.disabled = true;
+            choresDone = true;
+            updateAllowance();
+        });
+        
+        function updateAllowance() {
+            let childsAllowance;
+            if (choresDone === true) {
+                childsAllowance = 20;
+            } else {
+                childsAllowance = 10;
+            }
+
+            para.textContent = `Child has earned \$${childsAllowance} today.`;
+        }
+
+        updateAllowance();
+    </script>
+</body>
+</html>
