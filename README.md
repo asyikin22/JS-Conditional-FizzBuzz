@@ -12,5 +12,7 @@ Below are the steps demonstrating how we can write such program through writing 
 	• Step 4: If the current number is divisible by 5, then print "Buzz"
 	• Step 5: If the current number is divisible by 3 and 5, then print "FizzBuzz"
   • Step 6: Otherwise Print the current number. 
+
+  
 ![image](https://github.com/asyikin22/JS-Conditional-FizzBuzz/assets/148519441/93d713d9-98b7-4052-84b0-83577e3664be)
 
